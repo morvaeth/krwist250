@@ -1,0 +1,85 @@
+
+body {
+  background-color: lightblue;
+  text-align: center;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+.styled {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  border-radius: 10px;
+  background-color: tomato;
+  background-image: linear-gradient(
+    to top left,
+    rgb(0 0 0 / 20%),
+    rgb(0 0 0 / 20%) 30%,
+    transparent
+  );
+  box-shadow:
+    inset 2px 2px 3px rgb(255 255 255 / 60%),
+    inset -2px -2px 3px rgb(0 0 0 / 60%);
+}
+
+.styled:hover {
+  background-color: red;
+}
+
+.styled:active {
+  box-shadow:
+    inset -2px -2px 3px rgb(255 255 255 / 60%),
+    inset 2px 2px 3px rgb(0 0 0 / 60%);
+}
+label {
+  display: block;
+  font:
+    1rem "Fira Sans",
+    sans-serif;
+}
+
+input,
+label {
+  margin: 0.4rem 0;
+}
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+p,
+li {
+  font:
+    1rem "Fira Sans",
+    sans-serif;
+}
+
+p {
+  font-weight: bold;
+}
+nav {
+            background-color: blueviolet;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }

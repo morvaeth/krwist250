@@ -1,0 +1,143 @@
+/* style.css */
+ nav {
+            background-color: blueviolet;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+body {
+  background-color: hwb(0 21% 78%);
+  font-family: "Trirong", serif;
+  border: 5px solid rgba(130, 19, 204, 1);
+  margin: 20px; 
+  padding: 20px;
+  text-align: center;
+}
+a:hover {
+  background-color: #92366fff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+a:visited {
+  color: #0d0f0eff
+}
+ul, ol {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  display: inline-block;
+  text-align: center;
+  list-style-position: inside;
+  color: rgba(12, 2, 4, 0.507);
+  font-weight: bold;
+}
+#listDeliverables {
+  list-style-type: square;
+}
+#explaination {
+  border: double;
+}
+h1, .product-name, .price {
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  font-family: Luminari, fantasy;
+}
+h1 {
+  color: #111111;
+  text-align: center;
+}
+.product-table tbody tr:hover {
+  background-color: #3d6181ff;
+  cursor: pointer;
+}
+#adventuretitle {
+  text-decoration: underline;
+  text-shadow: 2px 2px #5e228fff
+}
+a {
+  color: rgba(214, 48, 151, 1);
+  text-decoration: none;
+}
+p {
+  color: hsl(0, 0%, 4%);
+}
+.gallery img {
+  width: 400px;
+  margin: 10px;
+  border: 2px solid #683f79ff;
+}
+.commissions-table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #533f66ff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.commissions-table th,
+.commissions-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border: 1px solid #080808ff;
+  border-width: 10px;
+  border-style: solid;
+}
+.Bonus {
+  width: 30%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #764c9eff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-style: bold;
+}
+ .Bonus, 
+ .Bonus th,
+.Bonus td {
+  padding: 10px;
+  text-align: center;
+  border: 20px solid #080808ff;
+  border-width: 20px;
+  border-style: bold;
+}
+.Bonus th {
+    background-color: #080808ff;
+    color: white;
+}
+.commissions-table th {
+  background-color: #514e63ff;
+  color: white;
+}
+
+.commissions-table img {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+}
+.type {
+  color: #111111ff;
+  font-weight: bold;
+}
+
+.price {
+  color: #e91e63;
+  font-weight: bold;
+}
+.floating-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #35c4c4ff;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  font-weight: bold;
+  z-index: 1000;
+}

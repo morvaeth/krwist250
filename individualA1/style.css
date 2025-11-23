@@ -1,0 +1,57 @@
+/* style.css */
+ nav {
+            background-color: blueviolet;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+body {
+  background-color: hwb(0 21% 78%);
+  font-family: Arial, sans-serif;
+  border: 5px solid rgb(221, 214, 214);
+  margin: 20px; 
+  padding: 20px;
+  text-align: center;
+}
+ul, ol {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  display: inline-block;
+  text-align: center;
+  list-style-position: inside;
+  color: rgba(12, 2, 4, 0.507);
+  font-weight: bold;
+}
+#listDeliverables {
+  list-style-type: square;
+}
+#explaination {
+  border: double;
+}
+h1 {
+  color: #111111;
+  text-align: center;
+}
+#adventuretitle {
+  text-decoration: underline;
+  text-shadow: 2px 2px #ccc
+}
+a {
+  color: rgb(96, 96, 128);
+}
+p {
+  color: hsl(0, 0%, 4%);
+}
+.gallery img {
+  width: 400px;
+  margin: 10px;
+  border: 2px solid #ccc;
+}

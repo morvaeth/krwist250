@@ -1,0 +1,197 @@
+body {
+  background-color: rgb(223, 85, 85);
+  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: rgb(12, 12, 12);
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 2px 2px #b37575;
+}
+
+.banner {
+  position: relative;
+  height: 200px;
+  background-image: url('record.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  color: rgb(243, 241, 241);
+  background-size: cover;
+  background-position: center;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(201, 78, 78, 0.5);
+  z-index: 1;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 20px;
+}
+
+a {
+  color: rgb(133, 10, 36);
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin: 10px auto;
+  width: fit-content;
+}
+
+a:hover {
+  background-color: rgb(223, 85, 85);
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: underline;
+}
+
+.record-table {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 1000px;
+  margin: 30px auto;
+  background: rgb(201, 78, 78);
+  box-shadow: 10px 10px 10px rgb(133, 10, 36);
+  border-radius: 10px;
+  overflow: visible;
+}
+.record-table, .record-row, .image-container {
+  overflow: visible;
+}
+
+.record-header, .record-row {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  border-bottom: 1px solid rgb(133, 10, 36);
+}
+
+.record-header {
+  font-weight: bold;
+  background-color: rgb(243, 151, 151);
+}
+
+.record-row:last-child {
+  border-bottom: none;
+}
+
+.record-row > div, .record-header > div {
+  flex: 1;
+  text-align: center;
+}
+
+.record-row img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgb(223, 85, 85);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.image-container {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.image-container:hover {
+  z-index: 10;
+}
+.hover-text {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align:center;
+  color: white;
+  background: rgb(201, 78, 78);
+  padding: 5px;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 10;
+}
+.image-container:hover .hover-text {
+  opacity: 1;
+}
+.record-row img:hover {
+  transform: translateY(60px) scale(2.2);
+  z-index: 10;
+  box-shadow: 4px 4px 10px rgb(143, 22, 63);
+  position: relative;
+}
+.float-image {
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin-left: 15px;
+  border-radius: 50%;
+}
+.floating-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(145, 35, 40);
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  font-weight: bold;
+  z-index: 1000;
+}
+div.relative {
+  position: relative;
+  width: 200px;
+  height: 200px;
+} 
+div.absolute img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+div.relative img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+div.absolute {
+  position: absolute;
+  top: 400px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+}
+.center {
+  text-align: center; 
+  color:black
+}
+nav {
+            background-color: rgb(223, 128, 140);
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
